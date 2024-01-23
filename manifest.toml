@@ -15,11 +15,11 @@ website = "https://misskey-hub.net/"
 code = "https://github.com/misskey-dev/misskey"
 
 [integration]
-yunohost = ">= 11.2.9"
-architectures = ["amd64", "arm64" ]
+yunohost = ">= 11.2"
+architectures = "all"
 multi_instance = false
-ldap = false
-sso = true
+ldap = "not_relevant" 
+sso = "not_relevant" 
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -37,7 +37,6 @@ ram.runtime = "50M"
 [resources]
     [resources.sources.main]
 
-
     [resources.ports]
 
     [resources.system_user]
@@ -48,7 +47,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages ="ffmpeg postgresql git"
+    packages ="ffmpeg postgresql git build-essential"
 
 
     [resources.database]
