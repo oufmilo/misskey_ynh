@@ -35,7 +35,6 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-    [resources.sources.main]
 
     [resources.ports]
 
