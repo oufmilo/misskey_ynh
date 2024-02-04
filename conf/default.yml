@@ -1,5 +1,5 @@
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Misskey configuration
+# Sharkey configuration
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 #   ┌─────┐
@@ -15,11 +15,11 @@ url: https://__DOMAIN__/
 #───┘ Port and TLS settings └───────────────────────────────────
 
 #
-# Misskey requires a reverse proxy to support HTTPS connections.
+# Sharkey requires a reverse proxy to support HTTPS connections.
 #
 #                 +----- https://example.tld/ ------------+
 #   +------+      |+-------------+      +----------------+|
-#   | User | ---> || Proxy (443) | ---> | Misskey (3000) ||
+#   | User | ---> || Proxy (443) | ---> | Sharkey (3000) ||
 #   +------+      |+-------------+      +----------------+|
 #                 +---------------------------------------+
 #

@@ -1,0 +1,53 @@
+packaging_format = 2
+
+id = "sharkey"
+name = "Sharkey"
+description.en = "Microblogging platform"
+description.fr = "Platforme de Microblogging"
+
+version = "2023.12.0~ynh1"
+
+maintainers = ["oufmilo"]
+
+[upstream]
+license = "AGPL-3.0"
+website = "https://git.joinsharkey.org/Sharkey"
+code = "https://activitypub.software/TransFem-org/Sharkey"
+
+[integration]
+yunohost = ">= 11.2"
+architectures = "all"
+multi_instance = false
+ldap = "not_relevant" 
+sso = "not_relevant" 
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+    
+    [install.init_main_permission]
+    help.en = "If enabled, Misskey will be accessible by people who do not have an account. This can be changed later via the webadmin."
+    help.fr = "Si cette case est cochée, Misskey sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.ports]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages ="ffmpeg postgresql git build-essential"
+
+
+    [resources.database]
+    type = "postgresql"
