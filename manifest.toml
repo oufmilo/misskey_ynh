@@ -1,18 +1,18 @@
 packaging_format = 2
 
-id = "misskey"
-name = "Misskey"
+id = "sharkey"
+name = "Sharkey"
 description.en = "Microblogging platform"
 description.fr = "Platforme de Microblogging"
 
-version = "2023.12.2~ynh1"
+version = "2023.12.0~ynh1"
 
-maintainers = ["Anmol Sharma"]
+maintainers = ["oufmilo"]
 
 [upstream]
 license = "AGPL-3.0"
-website = "https://misskey-hub.net/"
-code = "https://github.com/misskey-dev/misskey"
+website = "https://git.joinsharkey.org/Sharkey"
+code = "https://activitypub.software/TransFem-org/Sharkey"
 
 [integration]
 yunohost = ">= 11.2"

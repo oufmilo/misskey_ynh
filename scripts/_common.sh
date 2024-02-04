@@ -4,12 +4,7 @@
 # COMMON VARIABLES
 #=================================================
 
-NODEJS_VERSION="19"
-
-COMMIT="8b1362ab03c273f44cbbbb3c9f900301d82aeabd"
-
-# dependencies used by the app
-#REMOVEME? pkg_dependencies="ffmpeg postgresql"
+NODEJS_VERSION="20"
 
 #=================================================
 # PERSONAL HELPERS
